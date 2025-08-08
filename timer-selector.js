@@ -70,9 +70,9 @@ var TRANSLATION_TEMPLATE = {
     'error-invalid': '内部状态无效，请提交错误报告。',
   };
 TRANSLATIONS={
-  "wop":TRANSLATION_TEMPLATE,
-  "scp":TRANSLATION_TEMPLATE,
-  "rule":TRANSLATION_TEMPLATE,
+  "wop":{...TRANSLATION_TEMPLATE},
+  "scp":{...TRANSLATION_TEMPLATE},
+  "rule":{...TRANSLATION_TEMPLATE},
 }
 TRANSLATIONS["wop"]['template-deletion']=`由于本页的分数已经跌至%%score%%分，现根据[[[help:rules-of-writer#toc3|写作规定中作品删除相关部分]]]宣告删除此页。\n\n%%iframe%%\n\n**如果你并非作者或想要重写，请勿回复此贴。**`
 
