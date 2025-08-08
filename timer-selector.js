@@ -100,19 +100,8 @@ function getMessage(language, messageKey, optionalMessage = false) {
 }
 
 function getDefaultDeletionScore(language) {
-  switch (String(language)) {
-    case 'cn':
-      return -2;
-    case 'vi':
-      return 0;
-    case 'fr':
-    case 'es':
-      return -3;
-    case 'en':
-    case 'pig':
-    default:
-      return -10;
-  }
+    return -2;
+  
 }
 
 function insertCSS(styling) {
@@ -131,7 +120,7 @@ function buildUrl(language, startDate, durationMs, progressMessage, finishedMess
 
   // Finally, build URL
   var parameters = new URLSearchParams();
-  parameters.append('lang', language);
+  parameters.append('lang', "cn");
   parameters.append('time', targetDate.toISOString());
 
   if (progressMessage) {
