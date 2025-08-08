@@ -406,7 +406,7 @@ function buildUrl(language, startDate, durationMs, progressMessage, finishedMess
     parameters.append('style', styling);
   }
 
-  return 'https://scpwiki.github.io/timer/timer.html?' + parameters;
+  return 'https://timer.a8mc.top/timer/?' + parameters;
 }
 
 function buildWikitext(language, template, url, score, height, width) {
